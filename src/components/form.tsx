@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function SearchForm() {
 	const [input, setInput] = useState("");
+	const router = useRouter();
 
 	async function handleSubmit(e: React.FormEvent) {
 		e.preventDefault();
@@ -12,6 +14,10 @@ export default function SearchForm() {
 			const res = await fetch("/api/search?query=" + encodeURIComponent(input));
 			const data = await res.json();
 			console.log("Search result:", data);
+
+			if (data[0] && data[0].slug) {
+				router.push(`/${data[0].slug}`);
+			}
 		} catch (err) {
 			console.error("Search failed", err);
 		}
