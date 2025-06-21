@@ -31,7 +31,7 @@ export default function SearchForm() {
 					placeholder="Search..."
 					value={input}
 					onChange={(e) => setInput(e.target.value)}
-					className="w-full px-4 py-3 rounded-md bg-black text-gray-800 placeholder-gray-400 focus:outline-none"
+					className="w-full px-4 py-3 rounded-md bg-black text-gray-300 placeholder-gray-400 focus:outline-none"
 				/>
 			</div>
 		</form>
