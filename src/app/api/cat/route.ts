@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
 
 	const { data, error } = await supabase
 		.from("constructs")
-		.select("slug, name, subject, subsubject")
+		.select("slug, name, subject, subsubject, search_value")
 		.eq("subject", subject);
 
 	if (error) {
