@@ -33,7 +33,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 			<div className="font-primary">
 				<main className="container mx-auto px-6 py-16 text-center">
 					<h1 className="text-4xl font-title mb-4 text-red-400">404 – Construct Not Found</h1>{" "}
-					<p>We couldn’t find a constructa for “{slug}”.</p>
+					<p>We couldn’t find a construct for “{slug}”.</p>
 				</main>
 			</div>
 		);
