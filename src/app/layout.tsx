@@ -25,7 +25,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${sourceCodePro.variable} ${sourceSansPro.variable} antialiased`}>{children}</body>
+			<body className={`${sourceCodePro.variable} ${sourceSansPro.variable} antialiased`}>
+				<div className={"font-primary bg-slate-900 min-h-screen"}>{children}</div>
+			</body>
 		</html>
 	);
 }
