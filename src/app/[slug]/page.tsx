@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 interface Formula {
 	id: number;
 	slug: string;
