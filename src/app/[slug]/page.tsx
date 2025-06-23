@@ -17,7 +17,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 	async function fetchData(input: string): Promise<Construct | null> {
 		try {
 			const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-			const res = await fetch(`${baseUrl}/api/search?query=` + encodeURIComponent(input), { cache: "no-store" });
+			const res = await fetch(`${baseUrl}/api/fetch?slug=` + encodeURIComponent(input), { cache: "no-store" });
 			const data: Construct[] = await res.json();
 			return data[0] ?? null;
 		} catch (err) {
