@@ -57,7 +57,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 							<h3 className="text-2xl font-title mb-1 text-slate-100">{construct.name}</h3>
 							{construct.subsubject && (
 								<p className="text-sm text-slate-300">
-									<span className="font-semibold">Subsubject:</span> {construct.subsubject}
+									<span className="font-semibold">Part of:</span> {construct.subsubject}
 								</p>
 							)}
 						</Link>
