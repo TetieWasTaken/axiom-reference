@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 			<main className="container mx-auto px-6 py-16">
 				<section className="prose prose-invert max-w-none mx-auto">
 					<h3 className="text-5xl font-title mb-2 text-red-500">{construct.name}</h3>
-					<p className="italic text-xl text-slate-300">Slug: {construct.slug}</p>
+					<p className="italic text-xl text-slate-300">{construct.slug}</p>
 
 					<div className="bg-slate-800 border border-slate-700 p-6 rounded-lg my-8">
 						<h4 className="text-2xl font-semibold mb-2 text-slate-200">Value</h4>
