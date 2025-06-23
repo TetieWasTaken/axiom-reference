@@ -11,6 +11,7 @@ export default function Home() {
 				</section>
 				<SubjectButton subject="mathematics" />
 				<SubjectButton subject="physics" />
+				<SubjectButton subject="chemistry" />
 			</main>
 		</div>
 	);
