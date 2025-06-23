@@ -1,3 +1,6 @@
+import "katex/dist/katex.min.css";
+import { InlineMath, BlockMath } from "react-katex";
+
 interface Construct {
 	id: number;
 	slug: string;
@@ -47,8 +50,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 					<p className="italic text-xl text-slate-300">{construct.slug}</p>
 
 					<div className="bg-slate-800 border border-slate-700 p-6 rounded-lg my-8">
-						<h4 className="text-2xl font-semibold mb-2 text-slate-200">Value</h4>
-						<pre className="language-latex text-slate-100">{construct.value}</pre>
+						<BlockMath math={construct.value} />
 					</div>
 				</section>
 			</main>
