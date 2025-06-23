@@ -55,7 +55,6 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 							className="block bg-slate-800 border border-slate-700 rounded-lg p-6 hover:border-red-500 transition-colors"
 						>
 							<h3 className="text-2xl font-title mb-1 text-slate-100">{construct.name}</h3>
-							<p className="italic text-sm text-slate-400 mb-3">Slug: {construct.slug}</p>
 							{construct.subsubject && (
 								<p className="text-sm text-slate-300">
 									<span className="font-semibold">Subsubject:</span> {construct.subsubject}
