@@ -1,5 +1,5 @@
 import "katex/dist/katex.min.css";
-import { InlineMath, BlockMath } from "react-katex";
+import { BlockMath } from "react-katex";
 
 interface Construct {
 	id: number;
